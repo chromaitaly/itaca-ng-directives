@@ -16,6 +16,7 @@
 	"license": "MIT",
 	"homepage": "https://bitbucket.org/scoletti/itaca-ng-directives#readme",
 	"ignore": [
+		"**/.*",
 		"node_modules",
 		"bower_components",
 		"test",

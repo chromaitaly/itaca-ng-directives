@@ -24,9 +24,8 @@
 	            scope.isSticky = scope.isSticky || false;
 	            
 	            parent.style.position = 'relative';
-
-	            $window.addEventListener("scroll", function () {
-	            	
+	            
+	            var doSticky = function () {
 	            	parentHeight = parent.offsetHeight;
 	            	
 	                offsetTop = parent.offsetTop - offset;
@@ -57,7 +56,11 @@
 	                    
 	                    scope.isSticky = false;
 	                }
-	            });
+	            };
+
+	            $window.addEventListener("scroll", doSticky);
+	            
+	            scope.$on("$destroy", $window.removeEventListener("scroll", doSticky));
 	        }
 	    };
 	}
