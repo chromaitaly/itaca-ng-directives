@@ -1,6 +1,6 @@
 {
 	"name": "itaca-ng-directives",
-	"version": "1.0.0",
+	"version": "0.0.1",
 	"description": "Various AngularJS attribute directives, like onClickPanel, inputCheck, eventsManager, download, socialLogin and many more.",
 	"main": "dist/itaca-ng-directives.js",
 	"author": {
@@ -37,6 +37,7 @@
 		"angular-local-storage": "~0.7.1",
 		"lodash": "latest",
 		"bowser": "latest",
-		"itaca-ng-services" : "latest"
+		"itaca-ng-services" : "latest",
+		"itaca-ng-utils" : "latest"
 	}
 }
