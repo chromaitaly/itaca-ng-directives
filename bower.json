@@ -1,5 +1,6 @@
 {
 	"name": "itaca-ng-directives",
+	"version": "1.0.0",
 	"description": "Various AngularJS attribute directives, like onClickPanel, inputCheck, eventsManager, download, socialLogin and many more.",
 	"main": "dist/itaca-ng-directives.js",
 	"author": {
@@ -13,8 +14,8 @@
 			"email": "simone.coletti@chromaitaly.com"
 		}
 	],
-	"license": "MIT",
-	"homepage": "https://bitbucket.org/chromaitaly/itaca-ng-directives#readme",
+	"license": "GPL-3.0",
+	"homepage": "https://github.com/chromaitaly/itaca-ng-directives#readme",
 	"ignore": [
 		"**/.*",
 		"node_modules",
