@@ -35,6 +35,7 @@
 		"angular-dynamic-locale": "~0.1.32",
 		"angular-local-storage": "~0.7.1",
 		"lodash": "latest",
-		"bowser": "latest"
+		"bowser": "latest",
+		"itaca-ng-services" : "latest"
 	}
 }
