@@ -2,7 +2,7 @@
 ********************************************************************************
 ********************************************************************************
 ***	   itaca-ng-directives														 
-***    Copyright (C) 2016   Chroma Italy Hotels srl	 
+***    Copyright (C) 2016-2018   Chroma Italy Hotels srl	 
 ***                                                                          
 ***    This program is free software: you can redistribute it and/or modify  
 ***    it under the terms of the GNU General Public License as published by  
@@ -105,6 +105,20 @@
                         Navigation.go(prevPath);
                     }
                 });
+            }
+        };
+    }
+})();
+
+(function() {
+    "use strict";
+    DisableTransitionsListenersDirective.$inject = [ "TransitionsListener" ];
+    angular.module("itaca.directives").directive("chDisableTransitionsListeners", DisableTransitionsListenersDirective);
+    function DisableTransitionsListenersDirective(TransitionsListener) {
+        return {
+            restrict: "A",
+            link: function(scope, element, attrs) {
+                TransitionsListener.disable(attrs.chDisableTransitionsListeners);
             }
         };
     }
