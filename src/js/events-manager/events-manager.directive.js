@@ -34,7 +34,7 @@
 				 * Se ci sono i parametri della funzione do priorità a loro
 				 * altrimenti controllo se ci sono parametri passati dall'evento
 				 */
-				ev.fn.apply($scope, angular.isArray(ev.params) ? ev.params: args ? args: null);
+				ev.fn.apply($scope, angular.isArray(ev.params) ? ev.params : (_.isNil(args) ? null : angular.isArray(args) ? args : [args]));
 			});
 		});
     }
