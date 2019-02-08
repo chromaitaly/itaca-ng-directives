@@ -243,7 +243,7 @@
                 return true;
             }
             $scope.$on(ev.event, function(e, args) {
-                ev.fn.apply($scope, angular.isArray(ev.params) ? ev.params : args ? args : null);
+                ev.fn.apply($scope, angular.isArray(ev.params) ? ev.params : _.isNil(args) ? null : angular.isArray(args) ? args : [ args ]);
             });
         });
     }
