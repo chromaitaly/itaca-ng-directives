@@ -24,11 +24,11 @@
 		"tests"
 	],
 	"dependencies": {
-		"angular": "~1.6.8",
-		"angular-animate": "~1.6.8",
-		"angular-aria": "~1.6.8",
-		"angular-messages": "~1.6.8",
-		"angular-material": "~1.1.7",
+		"angular": "~1.7.8",
+		"angular-animate": "~1.7.8",
+		"angular-aria": "~1.7.8",
+		"angular-messages": "~1.7.8",
+		"angular-material": "~1.1.17",
 		"angular-translate": "~2.16.0",
 		"angular-translate-handler-log": "~2.16.0",
 		"angular-translate-loader-url": "~2.16.0",
@@ -37,7 +37,7 @@
 		"angular-local-storage": "~0.7.1",
 		"lodash": "latest",
 		"bowser": "~1.9.4",,
-		"itaca-ng-services" : "latest",
-		"itaca-ng-utils" : "latest"
+		"itaca-ng-services": "latest",
+		"itaca-ng-utils": "latest"
 	}
 }
